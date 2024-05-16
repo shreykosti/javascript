@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="err">invalid city name</div>
+      <div class="search">
+        <label for="search"></label>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search"
+          autofocus
+        />
+        <button type="submit" name="submit" id="submit">
+          <div class="pictureinfo">
+            <img src="./images/search.png" alt="serach" width="10px" />
+          </div>
+        </button>
+      </div>
+      <div class="master">
+        <div class="info1">
+          <img id="shrey" src="./images/clouds.png" alt="status" width="10px" />
+          <div class="tempInDegree">
+            <span id="valuetemp">22</span>
+            <span>°C</span>
+          </div>
+          <div class="city">nothing</div>
+        </div>
+
+        <div class="info2">
+          <div class="humidity">
+            <img
+              width="40px"
+              id="h"
+              src="./images/humidity.png"
+              alt="humidity"
+            />
+            <div class="one">
+              <span>humidity</span>
+              <span id="humidity">1</span>
+            </div>
+          </div>
+          <div class="windspeed">
+            <img width="40px" id="w" src="./images/wind.png" alt="windspeed" />
+            <div class="two">
+              <span>windspeed</span>
+              <span id="windspeedvalue">1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>

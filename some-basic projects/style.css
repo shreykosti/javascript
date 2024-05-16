@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+.err {
+  color: aqua;
+  position: relative;
+  top: -10vh;
+  font-size: 2rem;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    rgba(2, 0, 36, 1) 0%,
+    rgba(56, 56, 68, 1) 20%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  height: 40vh;
+}
+
+.tempInDegree,
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  top: -0.8vh;
+  font-size: 1.7rem;
+}
+
+#search {
+  padding: 17px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 20vh;
+  transition: transform 0.2s;
+}
+#submit {
+  padding: 17px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#submit:hover {
+  transform: scale(1.2);
+}
+#search:hover {
+  transform: scale(1.08);
+}
+#shrey {
+  width: 20vh;
+  position: relative;
+  top: -2vh;
+}
+.tempInDegree,
+.city {
+  position: relative;
+  top: -3vh;
+  font-size: 3rem;
+}
+.info1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search {
+  position: relative;
+  top: -0.5vh;
+}
+.humidity,
+.windspeed {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.one,
+.two {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  top: 0.6vh;
+}
+@media (max-height: 1200px) {
+  .container {
+    height: 45vh;
+  }
+}
+@media (max-height: 1000px) {
+  .container {
+    height: 50vh;
+  }
+}
+@media (max-height: 800px) {
+  .container {
+    height: 60vh;
+  }
+}
+@media (max-height: 600px) {
+  .container {
+    height: 70vh;
+  }
+}
+@media (max-height: 475px) {
+  .container {
+    height: 80vh;
+  }
+}
+@media (max-height: 400px) {
+  .container {
+    height: 90vh;
+  }
+}
+@media (max-height: 400px) {
+  .container {
+    height: 90vh;
+  }
+}
+@media (max-height: 325px) {
+  .container {
+    height: 100vh;
+  }
+}
+@media (max-width: 600px) {
+  #w,
+  #h {
+    display: none;
+  }
+}
